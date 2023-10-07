@@ -1,0 +1,3 @@
+<Directory /var/www/appList/public>
+    AllowOverrides All
+</Directory>

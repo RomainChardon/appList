@@ -30,6 +30,9 @@ class ProjetsController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+            $projet->setFavori(0);
+
             $entityManager->persist($projet);
             $entityManager->flush();
 

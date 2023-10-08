@@ -25,6 +25,9 @@ class Projets
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $image = null;
 
+    #[ORM\Column]
+    private ?int $favori = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -74,6 +77,18 @@ class Projets
     public function setImage(?string $image): static
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getFavori(): ?int
+    {
+        return $this->favori;
+    }
+
+    public function setFavori(int $favori): static
+    {
+        $this->favori = $favori;
 
         return $this;
     }

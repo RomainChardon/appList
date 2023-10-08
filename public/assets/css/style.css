@@ -1,0 +1,29 @@
+/* --- GLOBAL --- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Tuile Projet --- */
+
+#projet-container {
+    border: 1px solid red;
+    display: flex;
+}
+
+.projet-group {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    width: 100%;
+    margin: 0 75px;
+}
+
+.projet {
+    border: 1px solid green;
+
+}
